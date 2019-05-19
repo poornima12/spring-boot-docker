@@ -20,13 +20,13 @@ docker image ls
 docker login
 
 # Create a tag to push to docker hub
-docker tag docker-spring-boot <docker-user-name>/docker-spring-boot
+docker tag docker-spring-boot docker-user-name/docker-spring-boot
 
 # Push docker image to docker hub
-docker push <docker-user-name>/docker-spring-boot
+docker push docker-user-name/docker-spring-boot
 
 # Pull from docker hub
-docker pull <docker-user-name>/docker-spring-boot
+docker pull docker-user-name/docker-spring-boot
 
 # Run docker image mapping to port
-docker run -p 9090:8080 <docker-user-name>/docker-spring-boot
+docker run -p 9090:8080 docker-user-name/docker-spring-boot
