@@ -5,9 +5,9 @@ Dockerization of spring boot
 https://docs.docker.com/docker-for-mac/install/
 
 # Dockerfile to be added into spring boot project
-FROM openjdk:8
-EXPOSE 8080
-ADD target/spring-boot-docker.jar spring-boot-docker.jar
+FROM openjdk:8 <br/>
+EXPOSE 8080 <br/>
+ADD target/spring-boot-docker.jar spring-boot-docker.jar <br/>
 ENTRYPOINT ["java","-jar","/spring-boot-docker.jar"]
 
 # Build docker image
